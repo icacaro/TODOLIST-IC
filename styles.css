@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  min-width: 250px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,6 +16,7 @@ ul li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
+  list-style-type: none;
   background: #eee;
   font-size: 18px;
   transition: 0.1s;
@@ -60,6 +66,19 @@ ul li.checked::before {
   color: white;
 }
 
+.header {
+  background-color: rgba(75, 28, 128, 0.712);
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/*cria uma base no header*/
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 input {
   margin: 0;
